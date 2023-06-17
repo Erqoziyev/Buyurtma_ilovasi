@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63DDEA8C-0E33-4050-8665-9AD6F579B2C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Buyurtma_ilovasi</RootNamespace>
+    <AssemblyName>Buyurtma_ilovasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>free-icon-cutlery-1073367.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Asosiy menyu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Asosiy menyu.Designer.cs">
+      <DependentUpon>Asosiy menyu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ichimliklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ichimliklar.Designer.cs">
+      <DependentUpon>Ichimliklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Salatlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Salatlar.Designer.cs">
+      <DependentUpon>Salatlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shirinliklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Shirinliklar.Designer.cs">
+      <DependentUpon>Shirinliklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Taomlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\.Designer.cs">
+      <DependentUpon>Taomlar.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm1.Designer.cs">
+      <DependentUpon>MainForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Asosiy menyu.resx">
+      <DependentUpon>Asosiy menyu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ichimliklar.resx">
+      <DependentUpon>Ichimliklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Salatlar.resx">
+      <DependentUpon>Salatlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shirinliklar.resx">
+      <DependentUpon>Shirinliklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Taomlar.resx">
+      <DependentUpon>Taomlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm1.resx">
+      <DependentUpon>MainForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharbat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ovqat.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qulupnay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tort1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paxlava.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olchali.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rulet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medovik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vafli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepsi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fanta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dena.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sharmeva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palov.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sho%27rva.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lagmn.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qovurmalag%27mon.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastava.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastava1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastava2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qovurdoq.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabob.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mevalisalad.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oliviya.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makajoxori.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koreys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qizilcha.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arab.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sezar-salat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rees.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="free-icon-cutlery-1073367.ico" />
+    <Content Include="Resources\free-icon-cutlery-1073367.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
